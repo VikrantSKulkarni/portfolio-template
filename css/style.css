@@ -1,1 +1,24 @@
 /* main css file  */
+.container{
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    padding: 10px 20px;
+}

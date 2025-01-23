@@ -1,2 +1,2 @@
 # portfolio-template
-html,css template
+A html,css template for wordpress site

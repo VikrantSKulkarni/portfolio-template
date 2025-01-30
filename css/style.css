@@ -1,8 +1,10 @@
 /* main css file  */
 .container{
     max-width: 1200px;
+    /* max-width: 1140px; */
     width: 100%;
     margin: 0 auto;
+    /* box-sizing: border-box; */
 }
 a{
     text-decoration: none;
@@ -31,3 +33,91 @@ list-style: none;
     font-weight: bold;
     color:#7f7f7f;
 }
+
+.hero-wrapper{
+     display: grid;
+    justify-content:space-evenly;
+     grid-template-columns: 40% 60%;  /* define no.of coloumn in grid layout */
+     row-gap: 10px;
+     column-gap: 50px;
+    
+}
+.hero{
+    height: 94vh;
+    min-height: 650px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    }
+.box1{
+    margin-top: 80px;
+}
+.box1 h1{
+   
+    margin-bottom: 0;
+    font-size: 54px;
+    font-weight: 700;
+
+}
+.box1 h6{
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.box1 h6,p{
+    color:#8e8a8a;
+}
+.box1 h1{
+    color:#605050;
+    
+}
+.box1 p{
+   
+    font-size: 22px;
+}
+/* .box1,.box2{
+  padding:20px;
+ } */
+
+.box2 img{
+    width: 100%;
+    max-width: 720px;
+    /* margin-left:50px; */
+    margin-top: -95px;
+ }
+.button{
+    padding: 10px 0px;
+}
+.btn{
+    border: none;
+    color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 7px;
+}
+button:first-child{
+    background-color: orangered;
+}
+button:last-child{
+    background-color:black;
+}
+.button{
+    padding-top: 16px;
+}
+.social{
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+

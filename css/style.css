@@ -123,9 +123,13 @@ h1,h2,h3,h4,h5,h6,p {
 .box1 p{
     font-size: 22px;
 }
+.box2{
+    display: flex;
+    justify-content: center;
+}
 .box2 img{
-    width: 100%;
-    max-width: 720px;
+    height: 100%;
+    width: auto;
     margin-top: -95px;
  }
 .btn{

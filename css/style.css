@@ -188,6 +188,66 @@ button:last-child{
     align-self: center;
     margin: 0 auto;
 }
+
+#contact{
+    text-align: center;
+    justify-content: center;
+}
+.contact{
+    grid-template-columns: 58% 40%;
+    gap:0;
+}
+/* form styling  */
+form{
+    border: 1px solid rgba(173, 181, 189, .5);
+    box-shadow: 1px 2px 6px rgba(173, 181, 189, .5);
+    padding: 20px 30px;
+    height: 290px;
+}
+.address-box-wrapper{
+    border: 1px solid rgba(173, 181, 189, .5);
+    box-shadow: 1px 2px 6px rgba(173, 181, 189, .5);
+    height: 290px;
+    padding: 20px 30px;
+    display: grid;
+    align-items: center;
+}
+.address-box{
+    display: flex;
+    text-align: left;
+}
+.address-box i{
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-right: 10px;
+    color:#FF7A57;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+.text-start{
+    text-align: left;
+}
+.text-end{
+    text-align: right;
+}
+.form-button{
+    background: #ff7a57 !important;
+    border: none;
+    padding: 15px 10px;
+    width: 100%;
+    color: #fff;
+    border-radius: 50px;
+}
+.form-control{
+    width: 100%;
+    border: 1px solid #2323;
+    height: 32px;
+}
+
 #services{
     text-align: center;
 }
@@ -730,5 +790,4 @@ margin-top: 40px;
   .skill{
     height: 176px;
   }
-
   }

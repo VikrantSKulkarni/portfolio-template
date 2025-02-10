@@ -183,7 +183,14 @@ h1,h2,h3,h4,h5,h6,p {
   border-radius: 12px;
   font-size: 7px;
 } */
-
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    grid-template-columns: 100%;
+    width: 100%;
+}
 .social{
     margin-top: 7px;
 }
@@ -548,6 +555,8 @@ video{
     opacity: .7;
     font-size: 14px;
 }
+
+
 /* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     .hero{

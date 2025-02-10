@@ -126,7 +126,7 @@ list-style: none;
 .hero-wrapper{
     justify-content: center;
     display: grid;
-    grid-template-columns: 48% 50%;
+    grid-template-columns: 55% 45%;
     gap:2%;
     border-bottom: 1px solid #dee2e6;
     overflow-x: hidden !important;
@@ -143,10 +143,11 @@ h1,h2,h3,h4,h5,h6,p {
     }
 .box1{
     margin-top: 80px;
+    padding: 0px 25px;
 }
 .box1 h1{
     margin-bottom: 0;
-    font-size: 54px;
+    font-size: 79px;
     font-weight: 700;
 }
 .box1 h6{

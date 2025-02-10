@@ -187,7 +187,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 5px;
+    padding: 15px 10px;
     grid-template-columns: 100%;
     width: 100%;
 }

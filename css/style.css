@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
+    padding: 15px 25px;
     grid-template-columns: 100%;
     width: 100%;
 }
@@ -257,14 +257,22 @@ form input,textarea{
 .address-box{
     display: flex;
     text-align: left;
+    gap:10px;
+    padding: 2px;
 }
 .address-box i{
-    padding: 15px 20px;
-    border: 1px solid;
+    display: inline-block;
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    font-size: 24px;
-    margin-right: 10px;
-    color:#FF7A57;
+    border: 2px solid #ff7a57;
+    color: #ff7a57;
+    text-align: center;
+    line-height: 29px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-decoration: none;
 }
 .form-group{
     margin-bottom: 10px;
@@ -479,12 +487,29 @@ video{
         flex-direction: column;
         align-items: center;
     }
+    
 }
 /* media queries  */
 @media only screen and (max-width: 600px) {
     .hero-wrapper{
         grid-template-columns: 100%;
     }
+    .hero{
+        height: 70vh;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .address-box {
+      
+        padding: 12px;
+    }
+    .social-bottom{
+        padding-bottom: 9px !important;
+     }
+     .footer-item{
+        padding: 15px 13px;
+     }
 }
 .social-item{
     display: inline-block;
@@ -539,7 +564,7 @@ video{
 @media (max-width: 768px) {
     .hero{
         margin-top: 0px;
-        min-height: 472px;
+        min-height: 400px;
     }
     section{
         padding: 0px 0px;
@@ -556,6 +581,7 @@ video{
   }
   .hero-wrapper{
     grid-template-columns: 100%;
+    margin-top:40px;
 }
   .box1 h1{
     font-size: 48px;
@@ -650,7 +676,7 @@ margin-top: 40px;
     .hero-wrapper{
         grid-template-columns: 100%;
         min-height: 400px;
-        margin-top: -56px;
+        margin-top: 40px;
         }
         .hero {
          

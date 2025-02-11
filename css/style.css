@@ -195,7 +195,10 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: left;
     justify-content: space-between;
 }
-.hire-me h3 p{
+.hire-me h3{
+    color: #fff;
+}
+.hire-me p{
     color: #fff;
 }
 .about{
@@ -221,12 +224,13 @@ form{
     border: 1px solid rgba(173, 181, 189, .5);
     box-shadow: 1px 2px 6px rgba(173, 181, 189, .5);
     padding: 20px 30px;
-    height: 290px;
+}
+form input,textarea{
+    padding: 25px;
 }
 .address-box-wrapper{
     border: 1px solid rgba(173, 181, 189, .5);
     box-shadow: 1px 2px 6px rgba(173, 181, 189, .5);
-    height: 290px;
     padding: 20px 30px;
     display: grid;
     align-items: center;
@@ -729,7 +733,6 @@ margin-top: 40px;
     }
    
     .hero-wrapper{
-        height: 650px;
         border-bottom: none;
     }
     .widget{

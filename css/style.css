@@ -57,6 +57,10 @@ padding: 80px 0px;
 .bg-dark{
     background: #222;
 }
+.bg-white{
+    background: #fff !important;
+    color: #222 !important; 
+}
 a{
     text-decoration: none;
 }
@@ -178,6 +182,18 @@ button:last-child{
 }
 .social{
     margin-top: 7px;
+}
+
+
+.hire-me{
+    background: #ff7a57;
+    padding: 30px 20px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+.hire-me h3,p{
+    color: #fff;
 }
 .about{
     grid-template-columns: 20% 60%;

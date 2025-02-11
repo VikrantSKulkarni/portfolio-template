@@ -1,13 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 /* main css file  */
 .container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
-    /* padding: 40px 40px; */
-}
-html {
-    scroll-behavior: smooth;
 }
 section{
 padding: 80px 0px;
@@ -46,20 +49,28 @@ padding: 80px 0px;
     font-size: 30px;
 }
 
-.banner-button{
+/* button common styling  */
+.btn{
     padding: 10px 20px;
+    border: none;
     border-radius: 50px;
-    color:#fff;
+    font-weight: 600;
 }
-.bg-orange{
-    background: #ff7a57;
+.btn-dark{
+ background:#222;
+ color: #fff;
 }
-.bg-dark{
-    background: #222;
+.btn-orange{
+background:#ff7a57;
+color: #fff;
 }
-.bg-white{
-    background: #fff !important;
-    color: #222 !important; 
+.btn-white{
+background:#fff;
+color: #222;
+}
+.btn-wide{
+width: 100%;
+padding: 15px;
 }
 a{
     text-decoration: none;
@@ -157,11 +168,12 @@ h1,h2,h3,h4,h5,h6,p {
     justify-content: center;
 }
 .box2 img{
+    z-index: -1;
     height: 100%;
     width: auto;
     margin-top: -95px;
  }
-.btn{
+/* .btn{
     border: none;
     color: white;
   padding: 5px 10px;
@@ -169,17 +181,8 @@ h1,h2,h3,h4,h5,h6,p {
   text-decoration: none;
   border-radius: 12px;
   font-size: 7px;
-}
+} */
 
-button:first-child{
-    background-color: orangered;
-}
-button:last-child{
-    background-color:black;
-}
-.banner-button{
-    padding-top: 10px;
-}
 .social{
     margin-top: 7px;
 }
@@ -192,7 +195,7 @@ button:last-child{
     text-align: left;
     justify-content: space-between;
 }
-.hire-me h3,p{
+.hire-me h3 p{
     color: #fff;
 }
 .about{
@@ -249,14 +252,6 @@ form{
 }
 .text-end{
     text-align: right;
-}
-.form-button{
-    background: #ff7a57 !important;
-    border: none;
-    padding: 15px 10px;
-    width: 100%;
-    color: #fff;
-    border-radius: 50px;
 }
 .form-control{
     width: 100%;
@@ -596,15 +591,6 @@ video{
   .box1 h1{
     font-size: 48px;
   }
-  .banner-button{
-    padding-top: 20px;
-    padding-left: 0px;
-  }
-  .btn{
-    padding: 11px 22px;
-    border-radius: 17px;
-    font-size: 12px;
-  }
   .social{
     margin-top: 12px;
     padding-bottom: 53px;
@@ -635,11 +621,6 @@ video{
 .about{
 min-height: 576px;
 border-bottom: none;
-}
-.button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    color:#fff;
 }
 #services,#skills{
 border-bottom: none;
@@ -696,18 +677,10 @@ margin-top: 40px;
         padding: 0px 0px;
         
     }
-    button {
-        padding-top: 23px;
-        padding: 10px 0px;
-    }
     .widget{
         margin-top:-49px;
        
     }
-    .banner-button {
-        padding-left: 0px;
-    }
-    
       .box1{
         width:100%;
         padding: 0px 195px;
@@ -719,9 +692,6 @@ margin-top: 40px;
     }
       .box1 h1{
         font-size: 48px;
-      }
-      .banner-button{
-        padding-top: 20px;
       }
       .btn{
         padding: 11px 26px;
@@ -746,12 +716,7 @@ margin-top: 40px;
         .about{
         min-height: 576px;
         }
-        .button{
-            padding: 10px 20px;
-            border-radius: 50px;
-            color:#fff;
-        }
-
+    
   }
 
   @media (min-width: 1024px) and (max-width: 1920px) {
@@ -788,14 +753,8 @@ margin-top: 40px;
     padding: 0px 35px;
     font-size: 20px;
 }
-.button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    color:#fff;
-}
 .about-text p:first-of-type {
     text-align: initial; /* or text-align: left; */
-   
   }
   #services{
     padding: 0;

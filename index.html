@@ -11,23 +11,30 @@
 <body>
    <section id="hero1" class="hero">
       <header>
-         <nav class="navbar">
-            <div class="nav-brand">
-               <a href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
-            </div>
-            <ul>
-               <li><a href="#hero">Home </a></li>
-               <li><a href="#about">About </a></li>
-               <li><a href="#services">Service </a></li>
-               <li><a href="#portfolio">Portfolio </a></li>
-               <li><a href="#video">Testimonial</a></li>
-               <li><a href="#blog">Blog </a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-            <label for="check" id="check" class="checkbtn"><i class="fa-solid fa-bars"></i>
-            </label>
-         </nav>
+         <div class="topnav" id="myTopnav">
+               <a><img src="images/logo.svg" alt="logo" class="logo"></a>
+               <a href="#hero" class="active">Home</a>
+               <a href="#about">About</a>
+               <a href="#services">Service</a>
+               <a href="#portfolio">Portfolio</a>
+               <a href="#video">Testimonial</a>
+               <a href="#blog">Blog </a>
+               <a href="#contact">Contact</a>   
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>          
       </header>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+         </script>         
       <section id="hero" class="container">
          <div class="hero-wrapper">
             <div class="box1">
@@ -300,7 +307,7 @@
       <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.
       rerum commodi corrupti, temporibus non quam.</p>
       <div class="hero-wrapper contact">
-         <form action="">
+         <form class="address-box-wrapper" action="">
             <p class="mb-1 text-start">Available 24/7</p>
             <h2 class="mb-2 text-start">Get In Touch</h2>
             <div class="form-group">
@@ -345,19 +352,19 @@
             
          </div>
       </div>
-     
+      <div class=" mt-5 footer-item container">
+         <p>
+            Copyright 2025 &copy; 
+         </p>
+         <div class="social">
+            <a href="#" class="social-item"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-item"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-item"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
+         </div>
+      </div>  
    </section>
-   <div class=" mt-5 footer-item">
-      <p>
-         Copyright 2025 &copy; 
-      </p>
-      <div class="social">
-         <a href="#" class="social-item"><i class="fa-brands fa-facebook"></i></a>
-         <a href="#" class="social-item"><i class="fa-brands fa-linkedin"></i></a>
-         <a href="#" class="social-item"><i class="fa-brands fa-whatsapp"></i></a>
-         <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
-      </div>
-   </div>
+   
    
      
   

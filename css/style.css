@@ -84,71 +84,112 @@ padding: 15px;
 .d-flex{
     display: flex;
 }
-.logo{
-    height: 60px;
-}
 
 .hero{
     margin-top: 100px;
 }
-.topnav {
+nav {
+    background: #fff;
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+    width: 100%;
+    height: 80px;
     box-shadow: 0 6px 15px rgba(206, 212, 218, .3);
-    overflow: hidden;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between; /* Aligns items to left and right */
-    padding: 10px 20px; /* Add some padding for spacing */
-  }
-
-.logo-img {
-    flex: 1;
 }
 
-.link-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Aligns the links to the right */
-}
-  
-  .topnav a {
-    font-weight: 600;
-    /* float: left; */
-    /* display: block; */
-    color: rgba(0, 0, 0, .5);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    color: #222;
-  }
-  
-  .topnav a.active {
-    background-color: #ff7a57;
+.logo {
     color: white;
-  }
-  
-  .topnav .icon {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color:#838383;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    color: #222;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
     display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+}
+
+#check {
+    display: none !important;
+}
+
+@media (max-width: 952px) {
+    .logo {
+        font-size: 30px;
     }
-  }
- 
-  
- 
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color:#ff7a57;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
 .hero-wrapper{
     justify-content: center;
     display: grid;
@@ -426,6 +467,11 @@ text-align: center;
 }
 .img-container:hover img {
     transform: scale(1.1);
+}
+#portfolio, 
+#video,.skill {
+    position: relative;
+    z-index: -1;
 }
 .portfolio-text{
     text-align: center;
